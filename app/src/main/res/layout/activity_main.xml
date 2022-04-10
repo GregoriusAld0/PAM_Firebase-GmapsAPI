@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/txt_orderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Order Id"
+            android:textSize="12pt"
+            android:layout_marginTop="3pt"
+            >
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_editOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Ubah"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTxt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Alamat Asal"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/txt_currentPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat Asal"
+        android:textSize="9pt">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Alamat Tujuan"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_selectedPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat Tujuan"
+        android:textSize="9pt">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order">
+
+    </Button>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment">
+
+    </fragment>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_mylocation"/>
+
+    </FrameLayout>
+
+</LinearLayout>

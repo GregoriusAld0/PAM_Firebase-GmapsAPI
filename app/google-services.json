@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1092128212423",
+    "project_id": "pam-uksw2",
+    "storage_bucket": "pam-uksw2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092128212423:android:461b075815bd4ef01ac5e2",
+        "android_client_info": {
+          "package_name": "com.example.pam_firebase_googlemaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092128212423-jskphpq2ib5cjtre12dq605ckhsg90gi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfO4nK9IM9Pvi3tKK0a1vK3Mk_HEs8tSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092128212423-jskphpq2ib5cjtre12dq605ckhsg90gi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
